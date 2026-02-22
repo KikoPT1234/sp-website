@@ -76,11 +76,11 @@ body {
 
 .tudelft-logo {
     position: absolute;
-    top: -5rem;
-    right: 2.5rem;
-    height: 7.5rem;
+    top: 1.5rem;
+    right: 1.5rem;
+    height: 8rem;
     width: auto;
-    transform: skewX(15deg);
+    z-index: 2;
 }
 
 .container {
