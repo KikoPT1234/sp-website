@@ -308,3 +308,30 @@ p {
     width: 2.5rem;
     height: 2.5rem;
 }
+
+.full-screen {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#kiko {
+    background-color: #e1eae0;
+}
+
+#guy {
+    background-color: #d5c3b8;
+}
+
+#eva {
+    background-color: #e9edf9;
+}
+
+#jason {
+    background-color: #beccb8;
+}
+
+#deyan {
+    background-color: #e9d7d8;
+}
