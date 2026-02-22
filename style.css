@@ -17,9 +17,6 @@ body {
     background: var(--color-white);
     font-family: "Google Sans", sans-serif;
     color: var(--color-dark);
-    zoom: 1.1;
-
-    /* line-height: 2rem; */
 }
 
 .spacer {
@@ -88,7 +85,9 @@ body {
     display: block;
     height: clamp(5rem, 7vw, 7.5rem);
     width: auto;
-    transition: opacity 800ms, transform 800ms;
+    transition:
+        opacity 800ms,
+        transform 800ms;
 }
 
 .tudelft-logo.initial {
@@ -97,7 +96,7 @@ body {
 }
 
 .container {
-    width: 940px;
+    width: 1200px;
     max-width: 100%;
     padding: 0 2rem;
     margin-left: auto;
@@ -116,13 +115,13 @@ body {
 .cta-btn {
     display: inline-block;
     padding: 1rem 2rem;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
     background: #0a0a0a;
-    border-radius: 2px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background 200ms ease;
 }
@@ -135,16 +134,16 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 1.5rem;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
-h1.section-title {
+/* h1.section-title {
     font-size: clamp(2.5rem, 5vw, 3rem);
-}
+} */
 
 h2 {
-    font-size: 2.5rem;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .name-row {
@@ -168,12 +167,11 @@ h2 {
 
 p {
     line-height: 1.8rem;
-    text-align: left;
-    font-size: 1.2rem;
+    text-align: justify;
+    font-size: 1rem;
 }
 
 .title {
-    font-size: clamp(4rem, 6vw, 5.5rem);
     /* text-transform: uppercase; */
     /* font-style: italic; */
     transition:
@@ -184,6 +182,7 @@ p {
     position: relative;
     width: fit-content;
     margin: 0 auto;
+    font-size: 3rem;
 }
 
 .title.initial {
@@ -226,10 +225,10 @@ p {
 
 /* ============ CAST ============ */
 
-@media only screen and (min-width: 600px) {
-    .cast .member {
+@media only screen and (min-width: 700px) {
+    /* .cast .member {
         height: 30rem;
-    }
+    } */
 
     .cast .member:nth-child(odd) {
         flex-direction: row;
@@ -242,15 +241,14 @@ p {
     .cast .member .parallax {
         height: 100% !important;
         width: auto !important;
-        aspect-ratio: 1 / 1;
     }
 }
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
     .cast .member {
         height: 40rem;
     }
-}
+} */
 
 .cast .member {
     display: flex;
@@ -259,8 +257,8 @@ p {
 }
 
 .cast .member .parallax {
-    height: 40rem;
-    width: 100%;
+    flex: 1 0;
+    aspect-ratio: 1/ 1;
 }
 
 .cast .member .parallax img {
@@ -269,9 +267,13 @@ p {
 
 .cast .member .content {
     flex: 1 0;
+    margin: auto;
+}
+
+.cast .member .content > div {
+    padding: 2rem;
     max-width: 600px;
     margin: auto;
-    padding: 2rem;
 }
 
 .socials {
