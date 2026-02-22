@@ -80,7 +80,7 @@ body {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
-    height: 7.5rem;
+    height: clamp(6rem, 7vw, 7.5rem);
     width: auto;
     z-index: 2;
     transition: opacity 800ms, transform 800ms;
@@ -121,10 +121,17 @@ h2 {
     gap: 0.75rem;
     margin-bottom: 1rem;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.name-row.stacked {
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .name-row h2 {
     margin-bottom: 0;
+    white-space: nowrap;
 }
 
 p {
@@ -134,7 +141,7 @@ p {
 }
 
 .title {
-    font-size: 5.5rem;
+    font-size: clamp(4rem, 6vw, 5.5rem);
     /* text-transform: uppercase; */
     /* font-style: italic; */
     transition:
@@ -157,13 +164,7 @@ p {
 }
 
 @media only screen and (max-width: 800px) {
-    .name-row {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     .title {
-        font-size: 4rem;
         transform: none;
         width: auto;
     }
@@ -171,12 +172,6 @@ p {
     .title.initial {
         transform: translateX(-2rem);
         opacity: 0;
-    }
-
-    .tudelft-logo {
-        height: 6rem;
-        top: 0.5rem;
-        right: 0.5rem;
     }
 
     .tudelft-logo.initial {
