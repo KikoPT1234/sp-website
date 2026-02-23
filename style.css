@@ -136,7 +136,7 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
 }
 
@@ -145,7 +145,7 @@ h1 {
 } */
 
 h2 {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     font-size: 1.5rem;
 }
 
@@ -172,6 +172,7 @@ p {
     line-height: 1.8rem;
     text-align: justify;
     font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .title {
@@ -261,6 +262,7 @@ p {
     display: flex;
     flex-direction: column;
     min-height: fit-content;
+    color: rgba(0, 0, 0, 0.75);
 }
 
 .cast .member .parallax {
@@ -328,7 +330,7 @@ p {
 }
 
 #guy {
-    background-color: #d5c3b8;
+    background-color: #e2eff2;
 }
 
 #eva {
