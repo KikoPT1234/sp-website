@@ -230,13 +230,15 @@ p {
 /* ============ CAST ============ */
 
 @media only screen and (min-width: 700px) {
-    /* .cast .member {
-        height: 30rem;
-    } */
-
     html {
         font-size: 20px;
     }
+}
+
+@media only screen and (min-width: 900px) {
+    /* .cast .member {
+        height: 30rem;
+    } */
 
     .cast .member:nth-child(odd) {
         flex-direction: row;
@@ -244,11 +246,6 @@ p {
 
     .cast .member:nth-child(even) {
         flex-direction: row-reverse;
-    }
-
-    .cast .member .parallax {
-        height: 100% !important;
-        width: auto !important;
     }
 }
 
@@ -267,6 +264,7 @@ p {
 
 .cast .member .parallax {
     flex: 1 0;
+    width: 100%;
     aspect-ratio: 1/ 1;
 }
 
